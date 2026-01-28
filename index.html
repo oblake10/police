@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+   <meta charset="UTF-8">
+  <title>Calculadora de Multas | Código Penal</title>
+
+  <link rel="icon" type="image/png" href="./logo.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <div class="brand">
+        <div class="badge" aria-hidden="true">
+         <img src="./logo.png" alt="Logo" />
+        </div>
+
+        <div>
+          <h1>Calculadora de Multas y Condena</h1>
+          <p class="sub">Suma automática de meses y $. “Por unidad” permite cantidades.</p>
+        </div>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Panel">
+        <button id="tabDelitos" class="tab active" role="tab" aria-selected="true">Delitos</button>
+        <button id="tabObjetos" class="tab" role="tab" aria-selected="false">Objetos</button>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- IZQUIERDA -->
+      <section class="card panel">
+        <div class="card-h">
+          <div>
+            <div class="title">Panel</div>
+            <div class="hint">Cambia entre Delitos y Objetos.</div>
+          </div>
+        </div>
+
+        <div class="card-b">
+          <div class="toolbar">
+            <div class="search" title="Filtra por código, nombre o categoría">
+              <span class="muted">🔎</span>
+              <input id="q" placeholder="buscar: 707, marihuana, robos, chaleco..." />
+            </div>
+
+            <div class="btns">
+              <button class="smallbtn" id="btnOpenAll">Abrir todo</button>
+              <button class="smallbtn" id="btnCloseAll">Cerrar todo</button>
+            </div>
+          </div>
+
+          <div id="crimeList"></div>
+          <div id="objectList" class="hidden"></div>
+        </div>
+      </section>
+
+      <!-- DERECHA -->
+      <aside class="card totals">
+        <div class="card-h">
+          <div>
+            <div class="title">Totales</div>
+            <div class="hint">Los objetos no suman meses/$ (solo para plantilla).</div>
+          </div>
+        </div>
+
+        <div class="card-b">
+          <div class="split">
+            <div class="big">
+              <div class="k">MESES TOTALES</div>
+              <div class="v" id="totalMonths">0 meses</div>
+            </div>
+            <div class="big">
+              <div class="k">MULTA TOTAL</div>
+              <div class="v" id="totalFine">$0</div>
+            </div>
+          </div>
+
+          <div class="form">
+            <label class="lbl">Agente:</label>
+            <input id="agentName" class="text" placeholder="PO III Shannon Callahan" />
+
+            <label class="lbl">Involucrado:</label>
+            <input id="involvedName" class="text" placeholder="Nombre Apellido / State ID" />
+
+            <div class="checks">
+              <label class="ck">
+                <input id="chkHisopo" type="checkbox" />
+                <span>Hisopo</span>
+              </label>
+              <label class="ck">
+                <input id="chkGsr" type="checkbox" />
+                <span>GSR</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button class="smallbtn primary" id="btnCopy">Copiar plantilla</button>
+            <button class="smallbtn" id="btnReset">Reiniciar</button>
+          </div>
+
+          <div class="breakdown">
+            <h3>DESGLOSE (Delitos)</h3>
+            <div id="breakdownBody" class="muted">Selecciona delitos para ver el detalle.</div>
+          </div>
+
+          <div class="breakdown">
+            <h3>DESGLOSE (Objetos)</h3>
+            <div id="breakdownObjectsBody" class="muted">Añade objetos para ver el detalle.</div>
+          </div>
+
+          <footer class="foot">Tip: Infracción = 0 meses (solo multa).</footer>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script src="./delitos.js"></script>
+</body>
+</html>
