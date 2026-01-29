@@ -97,7 +97,6 @@ const OBJECTS = [
   { category: "Armas clase 1", id: "subnose_38", name: ".38 Subnose", type: "normal" },
   { category: "Armas clase 1", id: "balas_38_lc", name: "Balas .38 LC", type: "normal", note: "Cada 6 = 1 cargador" },
   { category: "Armas clase 1", id: "balas_45_acp", name: "Balas .45 ACP", type: "normal", note: "Cada 6 = 1 cargador" },
-  { category: "Armas clase 1", id: "cargador_pistola", name: "Cargador de pistola", type: "normal" },
 
   // Chalecos
   { category: "Chalecos", id: "chaleco_ligero", name: "Chaleco ligero", type: "normal" },
@@ -672,14 +671,13 @@ btnCopy.addEventListener("click", async () => {
   const objetosTxt = buildObjectsInline();
 
   const template =
-`| Agente: ${agente}
-| Objetos retirados: ${objetosTxt}
-| Involucrado: ${involucrado}
-| Articulos a imputar:
+    `👮🏻‍♂️ | Agente: ${agente}
+📦 | Objetos retirados: ${objetosTxt}
+👤 | Involucrado: ${involucrado}
+📃 | Articulos a imputar: ${articulosLinea}
+💲 | Total: ${money(fine)} y ${months} meses
+🗒️ | Notas: ${notas.length ? notas.join(" y ") : "-"}`;
 
-${articulosLinea}
-| Total: ${money(fine)} y ${months} meses
-| Notas: ${notas.length ? notas.join(" y ") : "-"}`;
 
   try {
     await navigator.clipboard.writeText(template);
