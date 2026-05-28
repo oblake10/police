@@ -5,7 +5,7 @@
   --line: #1b2a4a;
   --text: #e9f0ff;
   --muted: #a9b7d6;
-  --accent: #2f7bff;
+  --accent: #f497c6;
   --warn: #ffb020;
   --danger: #ff3b3b;
   --ok: #1cc8a0;
@@ -22,9 +22,13 @@
 body {
   margin: 0;
   font-family: var(--sans);
-  background: radial-gradient(1200px 700px at 20% -10%, rgba(47, 123, 255, .20), transparent 60%),
-    radial-gradient(800px 500px at 100% 0%, rgba(28, 200, 160, .10), transparent 55%),
-    linear-gradient(180deg, #050711, var(--bg));
+  font-size: 15px;
+  background: linear-gradient(180deg, #000000 0%, #020202 35%, #050505 100%);
+  background-image: url("ratonaimagen.png"), linear-gradient(180deg, #000000 0%, #020202 35%, #050505 100%);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 16px bottom 16px, center;
+  background-size: 360px auto, cover;
+  background-attachment: fixed, scroll;
   color: var(--text);
   min-height: 100vh;
 }
@@ -42,9 +46,9 @@ body {
   gap: 14px;
   padding: 16px 18px;
   border-radius: var(--radius);
-  border: 1px solid rgba(47, 123, 255, .20);
-  background: linear-gradient(180deg, rgba(12, 20, 39, .95), rgba(12, 20, 39, .70));
-  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: linear-gradient(180deg, rgba(0, 0, 0, .99), rgba(5, 5, 5, .98));
+  box-shadow: 0 15px 45px rgba(0, 0, 0, .35);
 }
 
 .brand {
@@ -60,22 +64,22 @@ body {
   border-radius: 12px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, rgba(47, 123, 255, .30), rgba(255, 255, 255, .06));
-  border: 1px solid rgba(47, 123, 255, .35);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .06);
+  background: linear-gradient(135deg, rgba(245, 127, 179, .40), rgba(255, 255, 255, .08));
+  border: 1px solid rgba(245, 127, 179, .45);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08);
   font-weight: 900;
 }
 
 h1 {
   margin: 0;
-  font-size: 20px;
+  font-size: 22px;
   /* antes 18px */
   letter-spacing: .3px;
 }
 
 .sub {
   margin: 2px 0 0;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted)
 }
 
@@ -96,8 +100,8 @@ h1 {
 }
 
 .tab.active {
-  border-color: rgba(47, 123, 255, .35);
-  background: rgba(47, 123, 255, .18);
+  border-color: rgba(245, 127, 179, .45);
+  background: rgba(245, 127, 179, .25);
 }
 
 .grid {
@@ -116,9 +120,9 @@ h1 {
 
 .card {
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, .06);
-  background: linear-gradient(180deg, rgba(12, 20, 39, .92), rgba(10, 18, 34, .90));
-  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: linear-gradient(180deg, rgba(0, 0, 0, .99), rgba(6, 6, 6, .98));
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .35);
   overflow: hidden;
 }
 
@@ -138,7 +142,7 @@ h1 {
 
 .hint {
   color: var(--muted);
-  font-size: 12px
+  font-size: 13px
 }
 
 .card-b {
@@ -162,8 +166,8 @@ h1 {
   align-items: center;
   padding: 10px 12px;
   border-radius: 14px;
-  border: 1px solid rgba(47, 123, 255, .22);
-  background: rgba(0, 0, 0, .12);
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(0, 0, 0, .45);
 }
 
 .search input {
@@ -173,7 +177,7 @@ h1 {
   background: transparent;
   color: var(--text);
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .btns {
@@ -187,29 +191,45 @@ h1 {
   padding: 10px 12px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, .10);
-  background: rgba(255, 255, 255, .06);
-  color: var(--text);
+  background: rgba(255, 182, 214, .12);
+  color: #ffe7f5;
   font-weight: 900;
   letter-spacing: .2px;
   white-space: nowrap;
 }
 
 .smallbtn.primary {
-  border-color: rgba(47, 123, 255, .35);
-  background: rgba(47, 123, 255, .18);
+  border-color: rgba(245, 127, 179, .35);
+  background: rgba(245, 127, 179, .18);
+  color: #fff0f8;
+}
+
+.smallbtn:hover {
+  border-color: rgba(245, 127, 179, .55);
+  background: rgba(245, 127, 179, .25);
+}
+
+.smallbtn.primary:hover {
+  border-color: rgba(245, 127, 179, .65);
+  background: rgba(245, 127, 179, .30);
+}
+
+.tab.active {
+  border-color: rgba(245, 127, 179, .35);
+  background: rgba(245, 127, 179, .18);
 }
 
 details.cat {
-  border: 1px solid rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .08);
   border-radius: 16px;
-  background: rgba(0, 0, 0, .10);
+  background: rgba(255, 255, 255, .02);
   margin-bottom: 10px;
   overflow: hidden;
 }
 
 details.cat[open] {
-  border-color: rgba(47, 123, 255, .20);
-  box-shadow: 0 0 0 3px rgba(47, 123, 255, .08);
+  border-color: rgba(245, 127, 179, .22);
+  box-shadow: 0 0 0 3px rgba(245, 127, 179, .14);
 }
 
 summary {
@@ -236,7 +256,7 @@ summary::-webkit-details-marker {
 
 .countPill {
   font-family: var(--mono);
-  font-size: 12px;
+  font-size: 13px;
   padding: 6px 10px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, .10);
@@ -266,9 +286,24 @@ summary::-webkit-details-marker {
   grid-template-columns: 1fr 160px;
   gap: 12px;
   padding: 12px;
-  border: 1px solid rgba(255, 255, 255, .06);
-  background: rgba(0, 0, 0, .12);
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(0, 0, 0, .18);
   border-radius: 14px;
+}
+
+.row.sev-minor {
+  border-color: rgba(243, 156, 18, .85);
+  background: rgba(243, 156, 18, .25);
+}
+
+.row.sev-grave {
+  border-color: rgba(221, 41, 21, .85);
+  background: rgba(221, 41, 21, .25);
+}
+
+.row.sev-inf {
+  border-color: rgba(39, 174, 96, .85);
+  background: rgba(39, 174, 96, .25);
 }
 
 @media (max-width: 520px) {
@@ -310,7 +345,7 @@ summary::-webkit-details-marker {
   flex-wrap: wrap;
   gap: 8px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .chip {
@@ -352,7 +387,7 @@ summary::-webkit-details-marker {
   gap: 10px;
   user-select: none;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 input[type="checkbox"] {
@@ -367,8 +402,8 @@ input[type="number"],
   max-width: 160px;
   padding: 10px 10px;
   border-radius: 12px;
-  border: 1px solid rgba(47, 123, 255, .25);
-  background: rgba(7, 11, 20, .65);
+  border: 1px solid rgba(245, 127, 179, .30);
+  background: rgb(10 10 10 / 65%);
   color: var(--text);
   outline: none;
   font-family: var(--mono);
@@ -380,8 +415,8 @@ input[type="number"],
 
 input[type="number"]:focus,
 .text:focus {
-  border-color: rgba(47, 123, 255, .60);
-  box-shadow: 0 0 0 3px rgba(47, 123, 255, .15);
+  border-color: rgba(245, 127, 179, .75);
+  box-shadow: 0 0 0 3px rgba(245, 127, 179, .22);
 }
 
 .split {
@@ -399,13 +434,13 @@ input[type="number"]:focus,
 .big {
   padding: 14px;
   border-radius: var(--radius);
-  border: 1px solid rgba(47, 123, 255, .22);
-  background: linear-gradient(135deg, rgba(47, 123, 255, .12), rgba(0, 0, 0, .10));
+  border: 1px solid rgba(245, 127, 178, 0.377);
+  background: linear-gradient(135deg, rgba(245, 127, 178, 0.356), rgba(0, 0, 0, .14));
 }
 
 .big .k {
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: .2px
 }
 
@@ -424,7 +459,7 @@ input[type="number"]:focus,
 .lbl {
   color: var(--muted);
   font-weight: 900;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: .2px;
 }
 
@@ -455,13 +490,13 @@ input[type="number"]:focus,
   margin-top: 12px;
   padding: 12px;
   border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, .06);
-  background: rgba(0, 0, 0, .12);
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(0, 0, 0, .18);
 }
 
 .breakdown h3 {
   margin: 0 0 10px;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--muted);
   letter-spacing: .2px
 }
@@ -506,7 +541,7 @@ input[type="number"]:focus,
   height: 26px;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, .10);
-  background: rgba(255, 255, 255, .06);
+  background: rgba(0, 0, 0, .30);
   color: var(--text);
   cursor: pointer;
   display: grid;
@@ -530,7 +565,7 @@ input[type="number"]:focus,
 .foot {
   margin-top: 12px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   text-align: center;
 }
 
@@ -573,13 +608,13 @@ input[type="number"]:focus,
 
 .objName {
   font-weight: 900;
-  font-size: 12px;
+  font-size: 13px;
   line-height: 1.1
 }
 
 .objNote {
   color: var(--muted);
-  font-size: 11px
+  font-size: 12px
 }
 
 .objQty {
@@ -591,11 +626,11 @@ input[type="number"]:focus,
   /* antes 42px */
   height: 72px;
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(47, 123, 255, .30), rgba(255, 255, 255, .06));
-  border: 1px solid rgba(47, 123, 255, .35);
+  background: linear-gradient(135deg, rgba(245, 127, 178, 0.534), rgba(255, 255, 255, .08));
+  border: 1px solid rgba(245, 127, 179, .45);
   display: grid;
   place-items: center;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .06);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08);
   overflow: hidden;
 }
 

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./style.css" />
   <meta charset="UTF-8">
-  <title>Calculadora de Multas | Código Penal</title>
+  <title>La Ratladora 🐭🧀</title>
 
   <link rel="icon" type="image/png" href="./logo.png">
   <link rel="stylesheet" href="./style.css">
@@ -20,15 +20,11 @@
         </div>
 
         <div>
-          <h1>Calculadora de Multas y Condena</h1>
-          <p class="sub">Suma automática de meses y $. “Por unidad” permite cantidades.</p>
+          <h1>Calculadora de Multas Económicas y Condena</h1>
+          <p class="sub">................................................................................................................................................................</p>
         </div>
       </div>
 
-      <div class="tabs" role="tablist" aria-label="Panel">
-        <button id="tabDelitos" class="tab active" role="tab" aria-selected="true">Delitos</button>
-        <button id="tabObjetos" class="tab" role="tab" aria-selected="false">Objetos</button>
-      </div>
     </header>
 
     <div class="grid">
@@ -37,7 +33,12 @@
         <div class="card-h">
           <div>
             <div class="title">Panel</div>
-            <div class="hint">Cambia entre Delitos y Objetos.</div>
+            <div class="hint">Añade delitos para calcular las multas y objetos para copiarlo al informe 🐭</div>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Panel">
+            <button id="tabDelitos" class="tab active" role="tab" aria-selected="true">Delitos</button>
+            <button id="tabObjetos" class="tab" role="tab" aria-selected="false">Objetos</button>
           </div>
         </div>
 
@@ -82,7 +83,7 @@
 
           <div class="form">
             <label class="lbl">Agente:</label>
-            <input id="agentName" class="text" placeholder="PO III Shannon Callahan" />
+            <input id="agentName" class="text" placeholder="Detective II Shannon Callahan" />
 
             <label class="lbl">Involucrado:</label>
             <input id="involvedName" class="text" placeholder="Nombre Apellido / State ID" />
@@ -101,6 +102,7 @@
 
           <div class="actions">
             <button class="smallbtn primary" id="btnCopy">Copiar plantilla</button>
+            <button class="smallbtn primary" id="btnCopyInforme">Copiar informe</button>
             <button class="smallbtn" id="btnReset">Reiniciar</button>
           </div>
 
