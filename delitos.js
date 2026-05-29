@@ -95,7 +95,7 @@
   // =========================
   // 04 - ARMAS, EXPLOSIVOS Y CONTRABANDO
   // =========================
-  { category: "04 - Armas, explosivos y contrabando", code: 401, name: "Posesión de arma ilegal (blanca)", severity: "Delito Menor", months: 5, fine: 500, unit: false },
+  { category: "04 - Armas, explosivos y contrabando", code: 401, name: "Posesión de arma ilegal (blanca)", severity: "Delito Menor", months: 5, fine: 500, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 406, name: "Cargador de arma de Clase 2", severity: "Delito Menor", months: 5, fine: 1000, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 407, name: "Cargador de arma de Clase 3", severity: "Delito Menor", months: 5, fine: 2000, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 409, name: "Objetos", severity: "Delito Menor", months: 0, fine: 0, unit: false },
@@ -107,8 +107,8 @@
   { category: "04 - Armas, explosivos y contrabando", code: 421, name: "Posesión de armamento explosivo", severity: "Delito Menor", months: 10, fine: 5000, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 426, name: "Posesión de chaleco ligero", severity: "Delito Menor", months: 5, fine: 250, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 428, name: "Posesión de contrabando en primer grado", severity: "Delito Menor", months: 5, fine: 250, unit: true },
-  { category: "04 - Armas, explosivos y contrabando", code: 422, name: "Posesión negligente criminal de un arma de fuego", severity: "Delito Menor", months: 15, fine: 3000, unit: false },
-  { category: "04 - Armas, explosivos y contrabando", code: 420, name: "Posesión de inhibidor de radar", severity: "Delito Menor", months: 0, fine: 350, unit: false },
+  { category: "04 - Armas, explosivos y contrabando", code: 422, name: "Posesión negligente criminal de un arma de fuego", severity: "Delito Menor", months: 15, fine: 3000, unit: true },
+  { category: "04 - Armas, explosivos y contrabando", code: 420, name: "Posesión de inhibidor de radar", severity: "Delito Menor", months: 0, fine: 350, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 433, name: "Exhibición de arma ilegal", severity: "Delito Menor", months: 5, fine: 300, unit: false },
   { category: "04 - Armas, explosivos y contrabando", code: 405, name: "Cargador de arma de Clase 1", severity: "Delito Menor", months: 1, fine: 150, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 434, name: "Posesión de termita", severity: "Delito Menor", months: 5, fine: 1500, unit: true },
@@ -117,13 +117,13 @@
   { category: "04 - Armas, explosivos y contrabando", code: 410, name: "Exhibición de armas legales en vía pública", severity: "Infracción", months: 0, fine: 125, unit: false },
 
   // Graves
-  { category: "04 - Armas, explosivos y contrabando", code: 402, name: "Posesión de arma de Clase 1", severity: "Delito Grave", months: 30, fine: 20000, unit: false },
-  { category: "04 - Armas, explosivos y contrabando", code: 403, name: "Posesión de arma de Clase 2", severity: "Delito Grave", months: 40, fine: 30000, unit: false },
-  { category: "04 - Armas, explosivos y contrabando", code: 404, name: "Posesión de arma de Clase 3", severity: "Delito Grave", months: 50, fine: 40000, unit: false },
-  { category: "04 - Armas, explosivos y contrabando", code: 408, name: "Posesión de arma de Clase 4", severity: "Delito Grave", months: 60, fine: 50000, unit: false },
+  { category: "04 - Armas, explosivos y contrabando", code: 402, name: "Posesión de arma de Clase 1", severity: "Delito Grave", months: 30, fine: 20000, unit: true },
+  { category: "04 - Armas, explosivos y contrabando", code: 403, name: "Posesión de arma de Clase 2", severity: "Delito Grave", months: 40, fine: 30000, unit: true },
+  { category: "04 - Armas, explosivos y contrabando", code: 404, name: "Posesión de arma de Clase 3", severity: "Delito Grave", months: 50, fine: 40000, unit: true },
+  { category: "04 - Armas, explosivos y contrabando", code: 408, name: "Posesión de arma de Clase 4", severity: "Delito Grave", months: 60, fine: 50000, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 411, name: "Posesión de molotov", severity: "Delito Grave", months: 10, fine: 3500, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 412, name: "Posesión de accesorios de armamento", severity: "Delito Grave", months: 5, fine: 1500, unit: true },
-  { category: "04 - Armas, explosivos y contrabando", code: 413, name: "Posesión de pistola eléctrica", severity: "Delito Grave", months: 20, fine: 4000, unit: false },
+  { category: "04 - Armas, explosivos y contrabando", code: 413, name: "Posesión de pistola eléctrica", severity: "Delito Grave", months: 20, fine: 4000, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 415, name: "Posesión de munición Clase 4", severity: "Delito Grave", months: 5, fine: 4000, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 427, name: "Posesión de elementos para fabricar armas", severity: "Delito Grave", months: 20, fine: 15000, unit: true },
   { category: "04 - Armas, explosivos y contrabando", code: 429, name: "Fuego o explosión con arma Clase 4", severity: "Delito Grave", months: 15, fine: 2000, unit: false },
@@ -150,7 +150,7 @@
   { category: "05 - Salud pública (Drogas)", code: 524, name: "Bolsa de marihuana", severity: "Delito Menor", months: 1, fine: 70, unit: true },
 
   // Infracciones
-  { category: "05 - Salud pública (Drogas)", code: 501, name: "Posesión de estupefacientes según cantidades", severity: "Infracción", months: 0, fine: 0, unit: false },
+  { category: "05 - Salud pública (Drogas)", code: 501, name: "Posesión de estupefacientes según cantidades", severity: "Infracción", months: 0, fine: 0, unit: true },
   { category: "05 - Salud pública (Drogas)", code: 505, name: "Retirada de estupefacientes destinados al consumo propio", severity: "Infracción", months: 0, fine: 0, unit: false },
   { category: "05 - Salud pública (Drogas)", code: 507, name: "Consumo de sustancias en vía pública", severity: "Infracción", months: 0, fine: 60, unit: false },
 
@@ -161,7 +161,7 @@
   { category: "05 - Salud pública (Drogas)", code: 511, name: "Mesa de fabricación de drogas", severity: "Delito Grave", months: 35, fine: 20000, unit: false },
   { category: "05 - Salud pública (Drogas)", code: 512, name: "Transporte de mercancías sospechosas", severity: "Delito Grave", months: 45, fine: 40000, unit: false },
   { category: "05 - Salud pública (Drogas)", code: 513, name: "Paquete de heroína", severity: "Delito Grave", months: 10, fine: 700, unit: true },
-  { category: "05 - Salud pública (Drogas)", code: 519, name: "Posesión de destilador Moonshine", severity: "Delito Grave", months: 25, fine: 7000, unit: false },
+  { category: "05 - Salud pública (Drogas)", code: 519, name: "Posesión de destilador Moonshine", severity: "Delito Grave", months: 25, fine: 7000, unit: true },
   { category: "05 - Salud pública (Drogas)", code: 520, name: "Paquete de ketamina", severity: "Delito Grave", months: 10, fine: 700, unit: true },
 
   // =========================
@@ -267,22 +267,22 @@
   { category: "10 - Delitos económicos", code: 1001, name: "Negar o borrar grabaciones de vídeo a la policía", severity: "Delito Menor", months: 0, fine: 5500, unit: false },
   { category: "10 - Delitos económicos", code: 1004, name: "Estafa", severity: "Delito Menor", months: 0, fine: 1000, unit: false },
   { category: "10 - Delitos económicos", code: 1007, name: "Abandono sin pagar", severity: "Delito Menor", months: 5, fine: 1500, unit: false },
-  { category: "10 - Delitos económicos", code: 1009, name: "Posesión de dinero sin declarar (5.000–9.999)", severity: "Delito Menor", months: 5, fine: 2500, unit: false },
+  { category: "10 - Delitos económicos", code: 1009, name: "Posesión de dinero sin declarar (5.000–9.999)", severity: "Delito Menor", months: 5, fine: 2500, unit: true },
   { category: "10 - Delitos económicos", code: 1012, name: "Ejercicio de seguridad sin licencia", severity: "Delito Menor", months: 10, fine: 2000, unit: false },
   { category: "10 - Delitos económicos", code: 1013, name: "Transporte ilegal de mercancía", severity: "Delito Menor", months: 10, fine: 2000, unit: false },
 
   // Infracciones
   { category: "10 - Delitos económicos", code: 1002, name: "Denegación de servicio sin causa", severity: "Infracción", months: 0, fine: 1500, unit: false },
   { category: "10 - Delitos económicos", code: 1003, name: "Venta sin permiso", severity: "Infracción", months: 0, fine: 1500, unit: false },
-  { category: "10 - Delitos económicos", code: 1008, name: "Posesión de dinero sin declarar (>1.000)", severity: "Infracción", months: 0, fine: 0, unit: false },
-  { category: "10 - Delitos económicos", code: 1011, name: "Posesión de fajo de billetes", severity: "Infracción", months: 0, fine: 0, unit: false },
+  { category: "10 - Delitos económicos", code: 1008, name: "Posesión de dinero sin declarar (>1.000)", severity: "Infracción", months: 0, fine: 0, unit: true },
+  { category: "10 - Delitos económicos", code: 1011, name: "Posesión de fajo de billetes", severity: "Infracción", months: 0, fine: 0, unit: true },
 
   // Graves
   { category: "10 - Delitos económicos", code: 1005, name: "Fraude o engaño", severity: "Delito Grave", months: 0, fine: 0, unit: false },
   { category: "10 - Delitos económicos", code: 1006, name: "Lavado de dinero", severity: "Delito Grave", months: 15, fine: 0, unit: false },
-  { category: "10 - Delitos económicos", code: 1010, name: "Posesión de dinero sin declarar (>10.000)", severity: "Delito Grave", months: 10, fine: 3500, unit: false },
-  { category: "10 - Delitos económicos", code: 1014, name: "Posesión de dinero sin declarar (>50.000)", severity: "Delito Grave", months: 20, fine: 20000, unit: false },
-  { category: "10 - Delitos económicos", code: 1015, name: "Posesión de dinero sin declarar (>100.000)", severity: "Delito Grave", months: 40, fine: 40000, unit: false },
+  { category: "10 - Delitos económicos", code: 1010, name: "Posesión de dinero sin declarar (>10.000)", severity: "Delito Grave", months: 10, fine: 3500, unit: true },
+  { category: "10 - Delitos económicos", code: 1014, name: "Posesión de dinero sin declarar (>50.000)", severity: "Delito Grave", months: 20, fine: 20000, unit: true },
+  { category: "10 - Delitos económicos", code: 1015, name: "Posesión de dinero sin declarar (>100.000)", severity: "Delito Grave", months: 40, fine: 40000, unit: true },
 
   // =========================
   // 11 - SEGURIDAD AÉREA
@@ -355,7 +355,7 @@
   { category: "14 - Delitos cibernéticos", code: 1405, name: "Publicación o filtración de datos personales", severity: "Delito Menor", months: 0, fine: 850, unit: false },
 
   // Infracción
-  { category: "14 - Delitos cibernéticos", code: 1401, name: "Posesión de dispositivos de hackeo", severity: "Infracción", months: 0, fine: 300, unit: false },
+  { category: "14 - Delitos cibernéticos", code: 1401, name: "Posesión de dispositivos de hackeo", severity: "Infracción", months: 0, fine: 300, unit: true },
 
   // Graves
   { category: "14 - Delitos cibernéticos", code: 1406, name: "Distribución de malware", severity: "Delito Grave", months: 15, fine: 3500, unit: false },
